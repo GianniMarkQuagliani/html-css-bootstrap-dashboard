@@ -46,5 +46,8 @@ body{
     .main{
         width: calc(100% - 150px);
     }
+    .lg_width{
+        width: 50% !important;
+    }
     
 }
