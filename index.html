@@ -19,6 +19,7 @@
 </head>
 <body>
     <header>
+        <!-- inizio navbar  -->
         <nav class="navbar navbar-expand-lg debug">
             <div class="container-fluid">
                 <!-- Mobile Logo  -->
@@ -27,7 +28,7 @@
                 </a>
                 <!-- Desktop Logo  -->
                 <a class="navbar-brand p-0 hidden" href="#">
-                    <img src="assets/img/logo.svg" width="150" alt="logo">
+                    <img src="/assets/img/logo.svg" width="150" alt="logo">
                 </a>
                 <!-- inizo form  -->
                 <form class="d-flex flex-grow-1 debug" role="search">
@@ -85,8 +86,35 @@
                 <!-- fine dropdown e dropstart  -->
             </div>
         </nav>
+        <!-- fine navbar  -->
+
+        <div class="bottom d-flex debug">
+            <!-- inizio sidebar -->
+            <div class="sidebar d-flex flex-column justify-content-between py-4 text-white text-center">
+                <div class="text-white text-center d-flex flex-column">
+                    <a class="fs-5 btn btn-outline-secondary border-0 text-white rounded-0" href="#">
+                        <i class="fa-solid fa-house"></i>
+                        <span class="hidden m-2">Home</span>
+                    </a>
+                    <a class="fs-5 btn btn-outline-secondary border-0 text-white rounded-0" href="#">
+                        <i class="fa-solid fa-chart-simple"> </i>
+                        <span class="hidden m-2">Status</span>
+                    </a>
+                    <a class="fs-5 btn btn-outline-secondary border-0 text-white rounded-0" href="#">
+                        <i class="fa-solid fa-signal"></i>
+                        <span class="hidden m-2">Signal</span>
+                    </a>
+                </div>
+                <div class="text-white text-center d-flex flex-column fs-5 text-decoration-none pb-3">
+                    <a class="text-decoration-none text-white" href="#">
+                        <i class="fa-solid fa-gear m-2"></i>
+                        <span class="hidden">Admin</span>
+                    </a>
+                </div>
+            </div>
+            <!-- fine sidebar  -->
+        </div>
     </header>
-    <main>M</main>
     <footer>F</footer>
 </body>
 </html>

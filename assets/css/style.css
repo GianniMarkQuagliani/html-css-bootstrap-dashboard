@@ -5,6 +5,10 @@ body{
     font-family: 'Roboto', sans-serif;
 }
 
+.main{
+    width: calc(100% - 70px);
+    overflow-y: auto;
+}
 /* Debug */
 .debug{
     background-color: red;
@@ -15,6 +19,14 @@ body{
     display: none !important;
 }
 
+.bottom{
+    height: calc(100vh -70px);
+}
+
+.sidebar{
+    width: 70px;
+    background-image: url(../img/sidebar-bg.png);
+}
 @media screen and (min-width:992){
     .logo-mobile{
         display: none;
