@@ -5,16 +5,20 @@ body{
     font-family: 'Open Sans', sans-serif;
     font-family: 'Roboto', sans-serif;
 }
-
+/* background  */
+.bg_grey{
+    background-color: #e9ecef;
+}
+.bg_main{
+    background-color: #1b72e8;
+}
+.bg_rc-badge{
+    background-color: #165bba;
+}
 /* Regola la larghezza del contenuto principale e abilita la barra di scorrimento verticale se necessario */
 .main{
     width: calc(100% - 70px);
     overflow-y: auto;
-}
-/* Debug */
-[class^="container"], [class^="navbar"], [class^="col"], [class^="bottom"]{
-    background-color: brown;
-    border: 1px solid black;
 }
 
 /* Nascondi forzatamente gli elementi con priorità importante */
@@ -29,6 +33,7 @@ body{
 
 /* Stili della barra laterale */
 .sidebar{
+    background-color: #051e34;
     width: 70px;
     background-image: url(../img/sidebar-bg.png);
 }
