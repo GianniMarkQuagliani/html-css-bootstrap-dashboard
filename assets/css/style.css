@@ -9,12 +9,7 @@ body{
 .bg_grey{
     background-color: #e9ecef;
 }
-.bg_main{
-    background-color: #1b72e8;
-}
-.bg_rc-badge{
-    background-color: #165bba;
-}
+
 /* Regola la larghezza del contenuto principale e abilita la barra di scorrimento verticale se necessario */
 .main{
     width: calc(100% - 70px);
@@ -24,11 +19,6 @@ body{
 /* Nascondi forzatamente gli elementi con priorità importante */
 .hidden{
     display: none !important;
-}
-
-/* Regola l'altezza della sezione inferiore */
-.bottom{
-    height: calc(100vh -70px);
 }
 
 /* Stili della barra laterale */
