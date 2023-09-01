@@ -1,10 +1,12 @@
 /* Google Font  */
 body{
+    /* Imposta diverse famiglie di font come fallback */
     font-family: 'Inter Tight', sans-serif;
     font-family: 'Open Sans', sans-serif;
     font-family: 'Roboto', sans-serif;
 }
 
+/* Regola la larghezza del contenuto principale e abilita la barra di scorrimento verticale se necessario */
 .main{
     width: calc(100% - 70px);
     overflow-y: auto;
@@ -15,38 +17,78 @@ body{
     border: 1px solid black;
 }
 
+/* Nascondi forzatamente gli elementi con priorità importante */
 .hidden{
     display: none !important;
 }
 
+/* Regola l'altezza della sezione inferiore */
 .bottom{
     height: calc(100vh -70px);
 }
 
+/* Stili della barra laterale */
 .sidebar{
     width: 70px;
     background-image: url(../img/sidebar-bg.png);
 }
 
+/* Regola la larghezza del contenuto principale e abilita la barra di scorrimento verticale se necessario */
 .main{
     width: calc(100% - 70px);
     overflow-y: auto;
 }
 
+/* Colore di sfondo per la sezione principale */
 .bg_main{
     background-color: #1b72e8;
 }
 
+/* Stili per le immagini all'interno delle celle della tabella */
+td img{
+    width: 1.25rem;
+    height: 1.25rem;
+}
+
+/* Stili per le icone all'interno delle celle della tabella */
+td i{
+    border: 1px solid gray;
+    padding: .25rem;
+    margin: .125rem;
+    border-radius: .4375rem;
+}
+
+/* Allinea l'ultimo figlio delle celle della tabella al centro */
+tr td div:last-child{
+    justify-content: center;
+}
+
+/* Imposta l'altezza per la prima cella in ogni riga della tabella */
+tr td:first-child{
+    height: 2.8125rem;
+}
+
+/* Effetto hover per alcune icone nell'ultimo figlio delle celle della tabella */
+tr td div:last-child i:first-child:hover, tr td div:last-child i:nth-child(2):hover{
+    color: gray;
+    cursor: pointer;
+}
+
+/* Query media per schermi più larghi di 992px */
 @media screen and (min-width:992){
+    /* Nascondi il logo per dispositivi mobili */
     .logo-mobile{
         display: none;
     }
+    /* Ripristina gli elementi nascosti per visualizzarli in linea */
     .hidden{
         display: inline !important;
     }
+    /* Regola la larghezza del contenuto principale per schermi più grandi */
     .main{
         width: calc(100% - 150px);
     }
+    /* Sovrascrivi la larghezza per elementi specifici su schermi più ampi */
     .lg_width{
         width: 50% !important;
     }
