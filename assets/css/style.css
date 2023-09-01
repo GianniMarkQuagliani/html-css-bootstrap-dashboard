@@ -10,8 +10,8 @@ body{
     overflow-y: auto;
 }
 /* Debug */
-.debug{
-    background-color: red;
+[class^="container"], [class^="navbar"], [class^="col"], [class^="bottom"]{
+    background-color: brown;
     border: 1px solid black;
 }
 
@@ -36,6 +36,7 @@ body{
 .bg_main{
     background-color: #1b72e8;
 }
+
 @media screen and (min-width:992){
     .logo-mobile{
         display: none;
