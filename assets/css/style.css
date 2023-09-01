@@ -5,11 +5,21 @@ body{
     font-family: 'Open Sans', sans-serif;
     font-family: 'Roboto', sans-serif;
 }
+
 /* background  */
 .bg_grey{
     background-color: #e9ecef;
 }
 
+.ms-bg-primary{
+    background-color: #165bba;
+}
+
+.fa-pen, .fa-trash{
+    color: rgba(108, 117, 125);
+    opacity: 1;
+    
+}
 /* Regola la larghezza del contenuto principale e abilita la barra di scorrimento verticale se necessario */
 .main{
     width: calc(100% - 70px);
@@ -19,6 +29,11 @@ body{
 /* Nascondi forzatamente gli elementi con priorità importante */
 .hidden{
     display: none !important;
+}
+
+/* Regola l'altezza della sezione inferiore */
+.bottom{
+    height: calc(100vh - 70px);
 }
 
 /* Stili della barra laterale */
@@ -65,12 +80,17 @@ tr td:first-child{
 
 /* Effetto hover per alcune icone nell'ultimo figlio delle celle della tabella */
 tr td div:last-child i:first-child:hover, tr td div:last-child i:nth-child(2):hover{
-    color: gray;
+    color: darkgray;
     cursor: pointer;
 }
 
+
+
 /* Query media per schermi più larghi di 992px */
-@media screen and (min-width:992){
+@media screen and (min-width:992px){
+    .sidebar{
+        width: 150px;
+    }
     /* Nascondi il logo per dispositivi mobili */
     .logo-mobile{
         display: none;
@@ -88,4 +108,10 @@ tr td div:last-child i:first-child:hover, tr td div:last-child i:nth-child(2):ho
         width: 50% !important;
     }
     
+}
+
+@media screen and (max-width:992px){
+    .lg_width{
+        width: 100% !important;
+    }
 }
